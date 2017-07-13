@@ -2,7 +2,7 @@
 ___
 Use this in your command line.
 
-    % python flask-controller.py --help
+    $ python flask-controller.py --help
     
     Usage: flask-controller.py command [options]
 
@@ -11,19 +11,21 @@ Use this in your command line.
 
     Commands:
       create-project  Create flask project tree.
+      create-app      Create flask app tree.
+
 
 ## Example
 ___
 
 ### Create project:
 
-> % python flask-controller.py create-project <your_project_name>
+> $ python flask-controller.py create-project <your_project_name>
 
-    python flask-controller.py create-project MyProject
+    $ python flask-controller.py create-project MyProject
 
-take a look a project structure:
+take a look at project structure:
     
-    % tree MyProject
+    $ tree MyProject
     MyProject/
     ├── app
     │   ├── decorators.py
@@ -48,3 +50,17 @@ take a look a project structure:
     └── tests
         └── __init__.py
 
+### Create application:
+
+> $ python flask-controller.py create-app <your_app_name>
+
+    $ python flask-controller.py create-app application
+    
+take a look at application structure:
+
+    $ tree application
+    application/
+    ├── errors.py
+    ├── forms.py
+    ├── __init__.py
+    └── views.py
