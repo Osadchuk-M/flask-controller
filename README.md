@@ -20,18 +20,31 @@ ___
 > % python flask-controller.py create-project <your_project_name>
 
     python flask-controller.py create-project MyProject
-    Done!
 
 take a look a project structure:
     
     % tree MyProject
     MyProject/
     ├── app
-    │   ├── auth
+    │   ├── decorators.py
+    │   ├── email.py
+    │   ├── exceptions.py
+    │   ├── __init__.py
     │   ├── main
+    │   │   ├── errors.py
+    │   │   ├── forms.py
+    │   │   ├── __init__.py
+    │   │   └── views.py
+    │   ├── models.py
     │   ├── static
     │   │   ├── css
     │   │   ├── fonts
     │   │   └── js
     │   └── templates
+    │       └── index.html
+    ├── config.py
+    ├── manage.py
+    ├── README.md
     └── tests
+        └── __init__.py
+
