@@ -11,8 +11,8 @@ Use this in your command line.
 
     Commands:
       create-project  Create flask project tree.
+      create-tests    Create tests.
       create-app      Create flask app tree.
-
 
 ## Example
 ___
@@ -64,3 +64,19 @@ take a look at application structure:
     ├── forms.py
     ├── __init__.py
     └── views.py
+    
+### Create tests:
+
+> $ python flask-controller.py create-tests <comma,separated,modules>
+
+    $ python flask-controller.py create-tests api,basics,models,selenium
+    
+take a look at tests structure
+
+    $ tree tests
+    tests/
+    ├── __init__.py
+    ├── test_api.py
+    ├── test_basics.py
+    ├── test_models.py
+    └── test_selenium.py
