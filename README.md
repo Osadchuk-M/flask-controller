@@ -1,5 +1,5 @@
 # flask-controller
-___
+
 Use this in your command line.
 
     $ python flask-controller.py --help
@@ -15,7 +15,7 @@ Use this in your command line.
       create-app      Create flask app tree.
 
 ## Example
-___
+
 
 ### Create project:
 
